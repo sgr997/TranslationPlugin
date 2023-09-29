@@ -31,6 +31,7 @@ jobs:
           distribution: zulu
           java-version: 11
           cache: gradle
+          android-build-tools-version: 30.0.3
 
       # Set environment variables
       - name: Export Properties
