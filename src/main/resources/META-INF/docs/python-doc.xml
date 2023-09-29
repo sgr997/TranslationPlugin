@@ -1,0 +1,15 @@
+<idea-plugin>
+    <extensions defaultExtensionNs="cn.yiiguxing.plugin.translate">
+        <documentationElementProvider
+                language="Python"
+                implementationClass="cn.yiiguxing.plugin.translate.provider.PythonDocumentationElementProvider"/>
+    </extensions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <lang.documentationProvider
+                id="Translation.TranslatedDocumentationProvider.Python"
+                order="first"
+                language="Python"
+                implementationClass="cn.yiiguxing.plugin.translate.provider.TranslatedDocumentationProvider"/>
+    </extensions>
+</idea-plugin>
